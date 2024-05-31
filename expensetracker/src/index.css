@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth@0,75..100;1,75..100&family=Ubuntu:wght@400;700&display=swap');
+
 :root {
   /* Global variables to be defined here */
-  /* --color-white: #ffffff; */
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-main: #3B3B3B;
   --color-secondary: #626262;
   --color-tertiary: #9B9B9B;
+  --color-green-shade: #9CFF5B;
+  --color-orange: #F4BB4A;
   --font-main: "Ubuntu";
-  --font-secondary: "Open Sans";
+  --font-secondary: "Open Sans", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --success-gradient: linear-gradient(90deg, #B5DC52 0%, #89E148 100%);
+  --failure-gradient: linear-gradient(90deg, #FF9595 0%, #FF4747 80%, #FF3838 100%);
 }
 
 *,
@@ -21,6 +30,7 @@
 html,
 body {
   height: 100%;
+  background-color: var(--color-main);
 }
 
 body {
@@ -53,6 +63,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
+
 #root,
 #__next {
   isolation: isolate;

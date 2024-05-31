@@ -1,0 +1,45 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 1rem;
+    padding: 3rem 1rem;
+    background-color: var(--color-tertiary);
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.cardContainer h3 {
+    color: var(--color-white);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-regular);
+    font-size: 30px;
+    line-height: 34.47px;
+}
+
+.cardContainer span {
+    font-family: var(--font-main);
+    font-size: 30px;
+    font-weight: var(--font-weight-bold);
+    line-height: 34.47px;
+}
+
+.success {
+    color: var(--color-green-shade);
+}
+
+.failure {
+    color: var(--color-orange);
+}
+
+@media (max-width: 720px) {
+    .card {
+        padding: 2rem 0.75rem;
+    }
+
+    .cardTitle {
+        font-size: 1.5rem;
+    }
+}

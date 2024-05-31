@@ -1,0 +1,29 @@
+.container {
+    padding: 1rem;
+}
+
+.container h1 {
+    color: var(--color-white);
+}
+
+.cardGroup {
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 3px 4px 4px 0px #00000040;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+@media(max-width:720px) {
+    .container h1 {
+        text-align: center;
+    }
+
+    .cardGroup {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}

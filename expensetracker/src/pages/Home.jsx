@@ -13,6 +13,7 @@ const Home = () => {
                     title="Wallet Balance"
                     money={wallet}
                     buttonText="+ Add Income"
+                    buttonType="success"
                 />
 
                 <Cards
@@ -20,6 +21,7 @@ const Home = () => {
                     money={expense}
                     buttonText="+ Add Expense"
                     success={false}
+                    buttonType="failure"
                 />
             </div>
         </div>

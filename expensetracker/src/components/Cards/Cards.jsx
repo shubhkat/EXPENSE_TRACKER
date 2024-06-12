@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Cards.module.css';
+import Buttons from '../Buttons/Buttons';
 
-const Cards = ({ title, money, handleClick, buttonText, success=true }) => {
+const Cards = ({ title, money, handleClick, buttonText, buttonType, success=true }) => {
     return (
         <div className={styles.cardContainer}>
             <h3>
@@ -10,7 +11,7 @@ const Cards = ({ title, money, handleClick, buttonText, success=true }) => {
                     {`₹${money}`}
                 </span>
             </h3>
-            <button handleClick={handleClick}>{buttonText}</button>
+            <Buttons  handleClick={handleClick} style={buttonType} > {buttonText} </Buttons>
         </div>
     )
 }
